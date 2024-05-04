@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 
 * {
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-    color: beige;
+
+body {
+    background-color: rgb(12, 12, 12);
+    color: #da0da0;
 }
-.navbar{
-    background-color: black;
-    color: #d8d8d8;
+
+.navbar {
+    background-color: #da0da0;
+    color: #da0da0;
     border-bottom: 0.5px solid gray;
     width: 100%;
     line-height: 80px;
@@ -23,10 +25,12 @@ body{
     left: 0;
     font-family: 'Roboto';
 }
+
 .navbar a {
     text-decoration: none;
-    color: #d8d8d8;
+    color: #f8e5f3;
 }
+
 .navbar a.nav-logo {
     float: left;
     height: inherit;
@@ -39,6 +43,7 @@ body{
     color: #d8d8d8;
     font-weight: bold;
 }
+
 .navbar ul {
     float: right;
     list-style: none;
@@ -46,34 +51,42 @@ body{
     line-height: inherit;
     padding: 0 50px;
 }
+
 .navbar ul li {
     display: inline-block;
 }
+
 .navbar ul li a {
     display: block;
-    text-align: center; 
+    text-align: center;
     min-width: 120px;
     padding: 0 30px;
 }
+
 .navbar ul li a:hover {
     background-color: gray;
 }
+
 .hero {
     font-family: 'Roboto';
-    color: #d8d8d8;
+    color: #da0da0;
     margin-top: 30%;
     margin-left: 100px;
 }
+
 .hero h1 {
     font-size: 60px;
 }
+
 .hero p {
     margin-top: 10px;
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .buttons {
     margin-top: 20px;
     background: #d8d8d8;
@@ -85,9 +98,11 @@ main {
     border-radius: 20px;
     margin-left: 10px;
 }
+
 .buttons:hover {
     background-color: #848484;
 }
+
 .circle {
     border-radius: 50%;
     background-color: transparent;
@@ -95,12 +110,41 @@ main {
     margin-left: 20%;
     width: 250px;
     height: 250px;
-    box-shadow: 0px -2px 15px 15px red;
+    box-shadow: 0px -2px 15px 15px rgb(224, 19, 214);
     filter: grayscale(1);
     transition: 3s;
 }
+
 .circle:hover {
     filter: grayscale(0);
     transition: 3s;
     cursor: pointer;
+}
+
+h1 {
+    font-family: "Marven", sans-serif;
+}
+
+.sobre, .servicos, .contatos{
+    height: 100vh; /* Define a altura da seção como 100% da altura da janela de visualização */
+    margin: 0; /* Remove as margens para garantir que a seção ocupe a tela inteira */
+    padding: 0; /* Remove o preenchimento para garantir que não haja espaço extra */
+    position: relative; /* Define a posição como relativa para permitir o posicionamento correto dos elementos filhos */
+    margin-left: 100px;
+}
+
+/* Define o layout de uma coluna */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* O código abaixo mantém os estilos existentes para o título (<h1>) e parágrafos (<p>) dentro de cada seção */
+
+.sobre h1, .servicos h1, .contatos h1 {
+    font-size: 30px;
+}
+
+.sobre p, .servicos p, .contatos p {
+    margin-top: 10px;
 }
